@@ -1,0 +1,318 @@
+/* --- Main Content Styling ---*/
+/* Style the main content container */
+.mainContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 0;
+    flex: 1;
+    width: 100%;
+  }
+  
+  /* Style the main content inner container */
+  .mainContentContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Adjust the max-width as needed */
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Style the main content text */
+  .mainContentText {
+    flex: 1;
+    padding-right: 30px;
+  }
+  
+  /* Style the main content heading */
+  .mainContentText h1 {
+    font-size: 48px; /* Adjust the font size as needed */
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the main content paragraph */
+  .mainContentText p {
+    font-size: 16px; /* Adjust the font size as needed */
+    color: black;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the 'Try for Free' button */
+  .tryForFree {
+    display: inline-block;
+    background-color: azure;
+    color: black;
+    text-decoration: none;
+    padding: 10px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+
+/* Style the main content image container */
+.mainContentImage {
+    flex: 1;
+    padding-left: 30px;
+  }
+  
+  /* Style the main content image */
+  .mainContentImage img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Style the 'Learn More' link */
+  .learnMore {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin-left: 300px; /* Adjust the spacing between the buttons as needed */
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  /* Style the arrow icon */
+  .learnMore i.fa-solid.fa-arrow-right {
+    font-size: 10px; /* Adjust the icon size as needed */
+    margin-left: 5px; /* Adjust the spacing between the text and the arrow */
+  }
+  
+  /* --- Carousel Styling --- */
+  .carouselContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+    padding: 20px 0;
+  }
+  
+  .carouselItem {
+    flex: 0 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    width: 20%;
+    text-align: center;
+  }
+  
+  .carouselItem img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* --- View All Link Styling --- */
+  .viewAllContainer {
+    display: flex;
+    justify-content: left;
+    padding-top: 350px;
+  }
+  
+  .viewAll {
+    display: inline-flex;
+    align-items: center;
+    color: white !important;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  
+  
+  .viewAll i {
+    font-size: 14px;
+    margin-left: 4px;
+  }
+  
+  /* --- Features Styling --- */
+  .featuresContainer {
+    padding: 60px 0;
+    background-color: #f8f8f8;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .featureTitle {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .featureTitle h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #333333;
+  }
+  
+  .feature {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: azure;
+    border-radius: 8px;
+  }
+  
+  .featureIcon {
+    font-size: 48px;
+    color: #5a5a5a;
+    margin-bottom: 20px;
+  }
+  
+  .featureText h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+  .featureText p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #5a5a5a;
+  }
+  
+  /* --- Testimonials Styling --- */
+  .testimonialsContainer {
+    padding: 60px 0;
+    background-color: #ffffff;
+  }
+  
+  .testimonials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .testimonialTitle {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .testimonialTitle h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #333333;
+  }
+  
+  .testimonial {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+    border-radius: 8px;
+  }
+  
+  .testimonialImage {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+  }
+  
+  .testimonialImage img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .testimonialText p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #5a5a5a;
+    margin-bottom: 20px;
+  }
+  
+  .testimonialText h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+  }
+  
+  /* Founders */
+  
+  .founders {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #ffffff;
+    width: 100%;
+    
+  
+  }
+  
+  .foundersContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
+    
+  }
+  
+  .founderCard {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+    border-radius: 8px;
+  }
+  
+  .founderImage {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+  }
+  
+  .founderImage img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .founderText h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+  .founderText p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #5a5a5a;
+  }
+  
