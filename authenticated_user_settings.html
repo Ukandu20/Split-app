@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Split - Account Settings</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/authenticated_user_page.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <!--Navigation Bar-->
+        <div class="navbar">
+            <nav>
+                <!--Logo-->
+                <a href="index.html" class="logo">
+                    <img src="img/logo-transparent.png" alt="Split Logo">
+                </a>
+                <!-- Search Bar -->
+                <form class="d-inline-flex">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <!--Authentication Links-->
+                <ul class="authLinks">
+                    <li class="notification-badge" data-count="0"><i class="fas fa-bell"></i></li>
+                    <li>
+                        <i class="fa-solid fa-user user-name"></i>
+                        <ul class="dropdown-menu" id="userMenu">
+                            <li><a href="#" id="logoutBtn">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group">
+                    <a href="authenticated_user_settings.html" class="list-group-item list-group-item-action active">Account Settings</a>
+                    <a href="authenticated_user_payment.html" class="list-group-item list-group-item-action">Billing and Payment</a>
+                    <a href="authenticated_user_security.html" class="list-group-item list-group-item-action">Security</a>
+                    <a href="authenticated_user_connect.html" class="list-group-item list-group-item-action">Connected Apps</a>
+                    <a href="authenticated_user_language.html" class="list-group-item list-group-item-action">Language and Region</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Account Settings</h4>
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form>
+                                   
+                                    <div class="form-group row">
+                                        <label for="username" class="col-4 col-form-label">User Name</label>
+                                        <div class="col-8">
+                                            <input id="username" name="username" placeholder="Username" class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="email" class="col-4 col-form-label">Email</label>
+                                        <div class="col-8">
+                                            <input id="email" name="email" placeholder="Email" class="form-control" type="email">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="firstName" class="col-4 col-form-label">First Name</label>
+                                        <div class="col-8">
+                                            <input id="firstName" name="firstName" placeholder="First Name" class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="lastName" class="col-4 col-form-label">Last Name</label>
+                                        <div class="col-8">
+                                            <input id="lastName" name="lastName" placeholder="Last Name" class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="phoneNumber" class="col-4 col-form-label">Phone Number</label>
+                                        <div class="col-8">
+                                            <input id="phoneNumber" name="phoneNumber" placeholder="Phone Number" class="form-control" type="tel">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="address" class="col-4 col-form-label">Address</label>
+                                        <div class="col-8">
+                                            <input id="address" name="address" placeholder="Address" class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="city" class="col-4 col-form-label">City</label>
+                                        <div class="col-8">
+                                            <input id="city" name="city" placeholder="City" class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="country" class="col-4 col-form-label">Country</label>
+                                        <div class="col-8">
+                                            <input id="country" name="country" placeholder="Country" class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label for="zipCode" class="col-4 col-form-label">Zip Code</label>
+                                        <div class="col-8">
+                                            <input id="zipCode" name="zipCode" placeholder="Zip Code" class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="offset-4 col-8">
+                                            <button name="submit" type="submit" class="btn btn-primary">Update Account</button>
+                                        </div>
+                                    </div>
+                                    </form>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </body>
+                                    </html>

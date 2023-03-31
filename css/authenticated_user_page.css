@@ -1,0 +1,345 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+/* Making the navbar responsive. */
+@media screen and (max-width: 1200px) {
+    .navbar {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+ 
+ /* Styling the Notification's dropdown menu. */
+ .notification-dropdown {
+    position: absolute;
+    right: 60px;
+    top: 45px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 100;
+    width: 250px;
+  }
+  
+  .notification-dropdown ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .notification-dropdown li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .notification-dropdown li a:hover {
+    color: #1a73e8;
+  }
+  
+  .notification-dropdown li:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  /* -- Styling the Navigation Bar **/
+ /* Styling the navbar. */
+  .navbar {
+    background-color: #a094d4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  /* Styling the links and icons in the navbar. */
+  .navbar a,  .navbar i {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+
+  }
+  
+ /* Aligning the search bar to the right. */
+  .navbar form {
+    margin-left: auto;
+  }
+  
+  .notification-badge {
+    position: relative;
+  }
+  
+ /* Styling the notification badge. */
+  .notification-badge::after {
+    content: attr(data-count);
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 4px;
+    border-radius: 50%;
+  }
+
+/* Making the user name clickable. */
+  .user-name {
+    cursor: pointer;
+}
+
+/* Styling the dropdown menu. */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    list-style-type: none;
+    margin: 0;
+    right: 0;
+    z-index: 1000;
+
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/* Hiding the navLinks. */
+.navLinks {
+    display: none;
+    background-color: #000;
+  }
+  
+ /* Aligning the profile picture and the user name to the right. */
+  .authLinks {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .authLinks li {
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .authLinks li:hover .dropdown-menu,
+  .authLinks li:focus-within .dropdown-menu {
+    display: block;
+  }
+  
+  
+ /* Styling the profile picture. */
+ .user-image {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+/* Styling the dropdown menu. */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  border-radius: 5%;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+}
+  
+/* Styling the dropdown menu. */
+
+  .dropdown-menu li a {
+    display: block;
+    padding: 0px 5px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .show {
+    display: block;
+  }
+
+/* Search bar container */
+.d-inline-flex {
+    position: relative;
+}
+
+/* Search input field */
+.form-control {
+    width: 400px;
+    height: 25px;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 50px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+/* Search icon */
+.btn-outline-secondary {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: black;
+}
+
+/* Change the search icon color on hover */
+.btn-outline-secondary:hover {
+    color: #333;
+}
+
+  
+  /* --- Sidebar Styling ---*/
+
+  
+  .sidebar {
+    width: 200px;
+    height: 100%;
+    position: fixed;
+    background-color: azure;
+    padding: 20px 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 15px 0;
+  }
+  
+  .sidebar ul li a {
+    color: #000;
+    text-decoration: none;
+    font-size: larger;
+  }
+  
+  .sidebar ul li ul {
+    padding-left: 20px;
+  }
+  
+    .sidebar ul li ul li {
+        padding: 10px 0;
+    }
+
+    .sidebar a {
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .sidebar a:hover, .sidebar a.active {
+        background-color: #f1f1f1;
+    }
+
+
+/* --- Main Content Styling --- */
+    .main {
+      display: flex;
+      flex-direction: column;
+      margin-left: 240px;
+      margin-top: 20px;
+      padding: 20px;
+      min-height: 100vh;
+      
+
+    }
+    
+    
+    .content {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    h2 {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #000;
+    }
+    
+    .summary {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .summary-item {
+      flex: 1;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #f8f8f8;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .summary-item h3 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    
+    .new-request-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333333;
+      color: #ffffff;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    
+    .new-request-btn:hover {
+      background-color: #555555;
+    }
+    
+    .right-sidebar {
+      margin-top: 20px;
+    }
+    
+    .right-sidebar > div {
+      margin-bottom: 20px;
+    }
+    
+    .right-sidebar h3 {
+      font-size: 22px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    

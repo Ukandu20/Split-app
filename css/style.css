@@ -1,0 +1,713 @@
+
+/* --- Main Page Styling ---  */
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+body {
+  background-color: #a094d4;
+  margin: 0;
+  padding: 30px 10px;
+  font-family: nue Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: black;
+  transition: background .4s ease-in;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Navigation Bar --- */
+
+/* Set background color and general style for the navbar */
+.navbar {
+  background-color: azure;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Set the layout for the nav container */
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+/* --- Logo --- */
+
+/* Set the height for the logo image */
+.logo img {
+  height: 40px;
+}
+
+/* --- NavLinks --- */
+
+/* Set the display properties for the navLinks container */
+.navLinks {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+/* Set the style for the navLinks items */
+.navLinks a {
+  text-decoration: none;
+  color: black;
+  margin-right: 15px;
+  padding: 10px;
+}
+
+/* Remove extra margin from the last navLinks item */
+.navLinks a:last-child {
+  margin-right: 0;
+}
+
+/* Set the hover effect for the navLinks items */
+.navLinks a:hover {
+  color: #a094d4;
+}
+
+/* --- Authentication Links Styling --- */
+.authLinks {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.authLinks li {
+  margin-left: 20px;
+}
+
+.loginLink {
+  font-size: 16px;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.loginLink:hover {
+  color: #5a5a5a;
+}
+
+.tryForFreeLink {
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #a094d4;
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.tryForFreeLink:hover {
+  background-color: #5a5a5a;
+}
+
+
+/* --- Search Bar Styling ---*/
+/* Style the search bar container */
+.searchBarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding-top: 60px;
+}
+
+/* Style the search bar form */
+.searchBar form {
+  display: flex;
+  align-items: center;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+  border-radius: 25px;
+  background-color: white;
+}
+
+/* Style the search input field */
+.searchBar input[type="text"] {
+  padding: 10px;
+  border: none;
+  font-size: 12px;
+  border-radius: 30px;
+  width: 100%; /* Adjust the width as needed */
+}
+
+/* Style the search button */
+.searchBar button[type="submit"] {
+  padding: 10px;
+  background-color: transparent; /* Remove background color */
+  border: none;
+  color: black;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Style the search icon */
+.searchBar button[type="submit"] i {
+  font-size: 12px;
+}
+
+/* --- Main Content Styling ---*/
+/* Style the main content container */
+.mainContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+  flex: 1;
+  width: 100%;
+}
+
+/* Style the main content inner container */
+.mainContentContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Adjust the max-width as needed */
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Style the main content text */
+.mainContentText {
+  flex: 1;
+  padding-right: 30px;
+}
+
+/* Style the main content heading */
+.mainContentText h1 {
+  font-size: 48px; /* Adjust the font size as needed */
+  font-weight: bold;
+  color: black;
+  margin-bottom: 20px;
+}
+
+/* Style the main content paragraph */
+.mainContentText p {
+  font-size: 16px; /* Adjust the font size as needed */
+  color: black;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Style the 'Try for Free' button */
+.tryForFree {
+  display: inline-block;
+  background-color: azure;
+  color: black;
+  text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Style the main content image container */
+.mainContentImage {
+  flex: 1;
+  padding-left: 30px;
+}
+
+/* Style the main content image */
+.mainContentImage img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the 'Learn More' link */
+.learnMore {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  margin-left: 300px; /* Adjust the spacing between the buttons as needed */
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Style the arrow icon */
+.learnMore i.fa-solid.fa-arrow-right {
+  font-size: 10px; /* Adjust the icon size as needed */
+  margin-left: 5px; /* Adjust the spacing between the text and the arrow */
+}
+
+/* --- Carousel Styling --- */
+.carouselContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+  padding: 20px 0;
+}
+
+.carouselItem {
+  flex: 0 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+  width: 20%;
+  text-align: center;
+}
+
+.carouselItem img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* --- View All Link Styling --- */
+.viewAllContainer {
+  display: flex;
+  justify-content: left;
+  padding-top: 350px;
+}
+
+.viewAll {
+  display: inline-flex;
+  align-items: center;
+  color: white !important;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+.viewAll i {
+  font-size: 14px;
+  margin-left: 4px;
+}
+
+/* --- Features Styling --- */
+.featuresContainer {
+  padding: 60px 0;
+  background-color: #f8f8f8;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.featureTitle {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.featureTitle h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.feature {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: azure;
+  border-radius: 8px;
+}
+
+.featureIcon {
+  font-size: 48px;
+  color: #5a5a5a;
+  margin-bottom: 20px;
+}
+
+.featureText h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.featureText p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #5a5a5a;
+}
+
+/* --- Testimonials Styling --- */
+.testimonialsContainer {
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.testimonials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.testimonialTitle {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.testimonialTitle h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.testimonial {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+.testimonialImage {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+}
+
+.testimonialImage img {
+  width: 100%;
+  height: auto;
+}
+
+.testimonialText p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #5a5a5a;
+  margin-bottom: 20px;
+}
+
+.testimonialText h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333;
+}
+
+/* Founders */
+
+.founders {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #ffffff;
+  width: 100%;
+  
+
+}
+
+.foundersContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+  
+}
+
+.founderCard {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+.founderImage {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+}
+
+.founderImage img {
+  width: 100%;
+  height: auto;
+}
+
+.founderText h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.founderText p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #5a5a5a;
+}
+
+
+
+
+/* --- Footer Styling --- */
+footer {
+  background-color: azure;
+  padding: 20px 20px;
+  font-size: 16px;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footerLinks,
+.footerSocials {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.footerLinks ul,
+.footerSocials ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLinks li,
+.footerSocials li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.footerLinks a,
+.footerSocials a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s;
+}
+
+.footerLinks a:hover,
+.footerSocials a:hover {
+  color: #777;
+}
+
+.footerSocials i {
+  font-size: 24px;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* --- Log in Form Styling ---*/
+.loginForm {
+  background-color: #fff;
+}
+
+.loginForm h1 {
+  text-align: center;
+  font-weight: bold;
+  color: #000;
+}
+
+.form-group label {
+  color: #000;
+  font-weight: bold;
+}
+
+.form-group input[type="email"],
+.form-group input[type="password"] {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 8px 12px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.form-check-input {
+  margin-right: 5px;
+}
+
+.form-check-label {
+  color: #000;
+  font-weight: normal;
+}
+
+.float-end {
+  float: right;
+}
+
+.form-group input[type="submit"] {
+  background-color: #0069d9;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: #0052a5;
+}
+
+.btn-outline-dark {
+  border-color: #343a40;
+  color: #343a40;
+  background-color: transparent;
+}
+
+.btn-outline-dark:hover {
+  background-color: #343a40;
+  color: #fff;
+}
+
+.btn-outline-dark i {
+  font-size: 18px;
+}
+
+.form-group .form-check {
+  display: inline-flex;
+  align-items: center;
+}
+
+.form-group a {
+  color: #000;
+  text-decoration: none;
+}
+
+.form-group a:hover {
+  text-decoration: underline;
+}
+
+.form-group p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.form-group .btn-outline-dark:first-child {
+  margin-right: 10px;
+}
+
+.form-group .btn-outline-dark:last-child {
+  margin-left: 10px;
+}
+
+.form-group .show-password {
+  position: relative;
+  margin-top: 5px;
+}
+
+.form-group .show-password i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.form-group input[type="password"].show {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* --- Sign Up Styling ---*/
+
+.signupForm {
+  background-color: #ffffff;
+  margin-top: 30px;
+  padding: 30px;
+
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.signupForm h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.signupForm label {
+  font-weight: bold;
+  color: #333;
+}
+
+.signupForm .form-control {
+  border: 1px solid #ced4da;
+  border-radius: 0;
+}
+
+.signupForm .btn-outline-dark {
+  border-color: #333;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.signupForm .btn-outline-dark:hover {
+  background-color: #333;
+  color: #ffffff;
+}
+
+.signupForm .text-decoration-none {
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+.signupForm .text-decoration-none:hover {
+  color: #0056b3;
+}
+
+
