@@ -1,0 +1,111 @@
+/* --- Log in Form Styling ---*/
+.loginForm {
+    background-color: #fff;
+  }
+  
+  .loginForm h1 {
+    text-align: center;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .form-group label {
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .form-group input[type="email"],
+  .form-group input[type="password"] {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 8px 12px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .form-check-input {
+    margin-right: 5px;
+  }
+  
+  .form-check-label {
+    color: #000;
+    font-weight: normal;
+  }
+  
+  .float-end {
+    float: right;
+  }
+  
+  .form-group input[type="submit"] {
+    background-color: #0069d9;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .form-group input[type="submit"]:hover {
+    background-color: #0052a5;
+  }
+  
+  .btn-outline-dark {
+    border-color: #343a40;
+    color: #343a40;
+    background-color: transparent;
+  }
+  
+  .btn-outline-dark:hover {
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  .btn-outline-dark i {
+    font-size: 18px;
+  }
+  
+  .form-group .form-check {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .form-group a {
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .form-group a:hover {
+    text-decoration: underline;
+  }
+  
+  .form-group p {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .form-group .btn-outline-dark:first-child {
+    margin-right: 10px;
+  }
+  
+  .form-group .btn-outline-dark:last-child {
+    margin-left: 10px;
+  }
+  
+  .form-group .show-password {
+    position: relative;
+    margin-top: 5px;
+  }
+  
+  .form-group .show-password i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .form-group input[type="password"].show {
+    font-family: "Open Sans", sans-serif;
+  }
