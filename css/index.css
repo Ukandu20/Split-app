@@ -249,6 +249,22 @@ body {
         box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
     }
 
+    .viewAllContainer {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .viewAll {
+        color: #555555;
+        font-weight: 600;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    
+    .viewAll:hover {
+        color: #29a0e7;
+    }
+    
 
     /* Features */
     .featuresContainer {
