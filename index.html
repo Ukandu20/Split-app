@@ -13,6 +13,7 @@
 
 
     <script src="js/script.js"></script>
+    <script src="js/index.js"></script>
 </head>
 <body>
     <header>
@@ -67,30 +68,38 @@
         </div>       
     </div>
 
-     <!--Website Carousel-->
+    <!--Website Carousel-->
 <div class="carouselContainer">
-    <div class="carousel slick-carousel">
-        <div class="carouselItem">
-            <img src="img/netflix-new-logo.png" alt="Netflix Logo">
+    <div class="carousel">
+        <div class="carouselTitle">
+            <h2>Popular Websites</h2>
         </div>
-        <div class="carouselItem">
-            <img src="img/disney-logo.png" alt="Disney Logo">
+        <div id="slider">
+            <input type="radio" name="slider" id="s1" checked />
+            <input type="radio" name="slider" id="s2" />
+            <input type="radio" name="slider" id="s3" />
+            <input type="radio" name="slider" id="s4" />
+            <input type="radio" name="slider" id="s5" />
+            <label for="s1" id="slide1">
+                <img src="img/netflix-new-logo.png" alt="Netflix Logo">
+            </label>
+            <label for="s2" id="slide2">
+                <img src="img/Disney-symbol.png" alt="Disney Logo">
+            </label>
+            <label for="s3" id="slide3">
+                <img src="img/hulu-logo-white.png" alt="Hulu Logo">
+            </label>
+            <label for="s4" id="slide4">
+                <img src="img/prime-logo.png" alt="Prime Logo">
+            </label>
+            <label for="s5" id="slide5">
+                <img src="img/hbo-logo.png" alt="HBO Logo">
+            </label>
+
+            <!--View All Link-->
+            
+
         </div>
-        <div class="carouselItem">
-            <img src="img/hulu-logo.png" alt="Hulu Logo">
-        </div>
-        <div class="carouselItem">
-            <img src="img/prime-logo.png" alt="Prime Logo">
-        </div>
-        <div class="carouselItem">
-            <img src="img/hbo-logo.png" alt="HBO Logo">
-        </div>
-        <div class="carouselItem">
-            <img src="img/dazn-logo.png" alt="Fubo Logo">
-        </div>
-    </div>
-    <div class="viewAllContainer">
-        <a href="view-all.html" class="viewAll">View All <i class="fa-solid fa-arrow-right"></i></a>
     </div>
 </div>
 
@@ -111,7 +120,7 @@
             </div>
             <div class="feature">
                 <div class="featureIcon">
-                    <i class="fa-solid fa-lock-alt"></i>
+                    <i class="fa-solid fa-user-shield"></i>
                 </div>
                 <div class="featureText">
                     <h3>Advanced Security</h3>
