@@ -2,7 +2,7 @@
 // Replace these with your own database credentials
 $servername = "localhost";
 $username = "ukandu_db";
-$password = "";
+$password = "1234";
 $dbname = "ukandu_db";
 
 // Create connection
