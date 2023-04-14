@@ -1,0 +1,243 @@
+body {
+    background-color: #29a0e7;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #999999;
+    overflow-x: hidden;
+}
+
+/* Style the search bar container */
+.searchBarContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    padding-top: 60px;
+    width: 100%;
+}
+
+/* Style the search bar form */
+.searchBar form {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    border: none;
+    font-size: 17px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+/* Style the search input field */
+.searchBar input[type="text"] {
+    padding: 10px;
+    border: none;
+    font-size: 12px;
+    border-radius: 50px;
+    width: 100%; /* Adjust the width as needed */
+}
+
+/* Style the search button */
+.searchBar button[type="submit"] {
+    padding: 8px;
+    background-color: transparent; /* Remove background color */
+    border: none;
+    color: black;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Style the search icon */
+.searchBar button[type="submit"] i {
+    font-size: 12px;
+}
+/* --- Main Content Styling --- */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-color: #29a0e7;
+    margin: auto;
+}
+
+.main-content-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main-content-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.main-content-text h1 {
+    font-size: 60px;
+    font-weight: 700;
+    color: #333333;    
+}
+
+.main-content-text p {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+.main-text p {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+.main-text li {
+    font-size: 12px;
+    font-weight: 400;
+    color: black;
+}
+
+.main-sections {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    position: relative;
+    width: 1200px;
+    height: 400px;
+    margin: auto;
+}
+
+.main-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.main-sections-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.main-sections-text h1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.main-sections .main-box {
+    position: relative;
+    width: calc(400px - 30px);
+    height: calc(420px - 40px);
+    background-color: whitesmoke;
+    margin: 15px;
+    float: left;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-sections .main-box .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: whitesmoke;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.main-sections .main-box:hover .icon {
+  top: 20px;
+  right: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.main-sections .main-box .icon .fa-solid {
+  position: relative;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  transition: 0.5s;
+  color: #29a0e7;
+}
+
+.main-sections .main-box:hover .icon .fa-solid {
+  font-size: 40px;
+}
+
+.main-sections .main-box .main-text {
+  position: absolute;
+  top: 100px;
+  height: calc(100% - 100px);
+  text-align: center;
+  padding: 20px;
+  transition: 0.5s;
+  color: black;
+  z-index: 2;
+}
+
+.main-sections .main-box .main-text h2 {
+  margin: 0;
+  padding: 0;
+  color: #29a0e7;
+  font-size: 30px;
+}
+
+.main-sections .main-box:hover .main-text {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.main-sections .main-box .main-content-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.main-sections .main-box:hover .main-content-button {
+bottom: 20px;
+}
+
+.main-sections .main-box .main-content-button a {
+display: inline-block;
+padding: 5px 10px;
+background-color: #29a0e7;
+color: #fff;
+text-decoration: none;
+border-radius: 5px;
+transition: 0.5s;
+}
+
+.main-sections .main-box:hover .main-content-button a {
+background-color: #333;
+}
+
+.main-sections .main-box .main-content-button a:hover {
+background-color: #29a0e7;
+}
+
+.main-sections .main-box .main-content-button a i {
+margin-left: 5px;
+transition: 0.5s;
+}
+
+.main-sections .main-box:hover .main-content-button a i {
+margin-left: 10px;
+}
+

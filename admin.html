@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <title>Admin Panel</title>
+</head>
+
+<body>
+    <header>
+        <!--Navigation Bar-->
+        <div class="navbar">
+            <nav>
+                <!--Logo-->
+                <a href="index.html" class="logo">
+                    <img src="img/logo-transparent.png" alt="Split Logo">
+                </a>
+                <!-- Search Bar -->
+                <form class="d-inline-flex">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+                <!--Authentication Links-->
+                <ul class="authLinks">
+                    <li>
+                        <a href="index.html" id="logoutBtn">Logout</a>
+                    <li>
+                        <img src="img/male-headshot.jpg" alt="User Image" class="user-image">
+                        <ul class="dropdown-menu" id="userMenu">
+                            <li><a href="index.html" id="logoutBtn">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                
+            </nav>
+        </div>
+    </header>
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1>Brand</h1>
+        </div>
+        <ul>
+            <li><img src="dashboard (2).png" alt="">&nbsp; <span>Dashboard</span> </li>
+            <li><img src="reading-book (1).png" alt="">&nbsp;<span>Members</span> </li>
+            <li><img src="teacher2.png" alt="">&nbsp;<span>Notifications</span> </li>
+            <li><img src="school.png" alt="">&nbsp;<span>Schools</span> </li>
+            <li><img src="payment.png" alt="">&nbsp;<span>Income</span> </li>
+            <li><img src="help-web-button.png" alt="">&nbsp; <span>Help</span></li>
+            <li><img src="settings.png" alt="">&nbsp;<span>Settings</span> </li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <div class="search">
+                    <input type="text" placeholder="Search..">
+                    <button type="submit"><img src="search.png" alt=""></button>
+                </div>
+                <div class="user">
+                    <a href="#" class="btn">Add New</a>
+                    <img src="notifications.png" alt="">
+                    <div class="img-case">
+                        <img src="img/user.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <div class="box">
+                        <h1>2194</h1>
+                        <h3>Members</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="students.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>53</h1>
+                        <h3>Platforms</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="teachers.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>5</h1>
+                        <h3>Affiliates</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="schools.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1>350000</h1>
+                        <h3>Income</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="income.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="content-2">
+                <div class="recent-payments">
+                    <div class="title">
+                        <h2>Recent Payments</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Platform</th>
+                            <th>Amount</th>
+                            <th>Option</th>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>Netflix</td>
+                            <td>$4.99</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>DAZN</td>
+                            <td>$5.99</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>HBO Max</td>
+                            <td>$4.99</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>John Smith</td>
+                            <td>DAZN</td>
+                            <td>$9.99</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>Josephine Cameron</td>
+                            <td>Amazon Prime Video</td>
+                            <td>$4.99</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>St. James College</td>
+                            <td>$120</td>
+                            <td><a href="#" class="btn">View</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="new-students">
+                    <div class="title">
+                        <h2>New Members</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Profile</th>
+                            <th>Name</th>
+                            <th>option</th>
+                        </tr>
+                        <tr>
+                            <td><img src="img/female-user.png" alt=""></td>
+                            <td>Jane Doe</td>
+                            <td><img src="info.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/user.png" alt=""></td>
+                            <td>John Steve Doe</td>
+                            <td><img src="info.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/profile-icon.png" alt=""></td>
+                            <td>John Steve Doe</td>
+                            <td><img src="info.png" alt=""></td>
+                        </tr>
+                        <tr>
+                            <td><img src="img/profile-icon2.png" alt=""></td>
+                            <td>John Steve Doe</td>
+                            <td><i class="fa-solid fa-circle-info"></i></td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+/* index.css */
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url("img/zoomed-in-svg.jpg"); /* Replace with the actual image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #999999;
+    overflow-x: hidden;
+}
+
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+.navLinks,
+.authLinks {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navLinks li,
+.authLinks li {
+    margin-left: 30px;
+}
+
+.navLinks a,
+.authLinks a {
+    text-decoration: none;
+    color: #555555;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.navLinks a:hover,
+.authLinks a:hover {
+    color: #29a0e7;
+}
+
+.tryForFreeLink {
+    background-color: #29a0e7;
+    color: #ffffff;
+    padding: 8px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.tryForFreeLink:hover {
+    background-color: #1d87bd;
+    color: #ffffff;
+}
+
+/* Main Content */
+.mainContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    background-color: #f5f5f5;
+}
+
+.mainContentContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mainContentText {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.mainContentText h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.mainContentText p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+.tryForFree {
+    background-color: #29a0e7;
+    color: #ffffff;
+    padding: 12px 30px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-right: 15px;
+}
+
+.tryForFree:hover {
+    background-color: #1d87bd;
+    color: #ffffff;
+}
+
+
+.mainContent .mainContentContainer .mainContentText .feature {
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 4px;
+    border: 3px solid #e5e5e5;
+    margin-bottom: 20px;
+}
+
+.mainContentText h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.mainContentText p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+.mainContent .mainContentContainer .mainContentText .feature .fa-solid {
+    font-size: 40px;
+    color: #29a0e7;
+    margin-right: 10px;
+    float: left;
+}
+

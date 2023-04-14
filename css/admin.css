@@ -1,0 +1,505 @@
+/* index.css */
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+      font-size: 14px;
+      line-height: 1.7;
+      color: #999999;
+      overflow-x: hidden;
+  }
+
+/* Making the navbar responsive. */
+@media screen and (max-width: 1200px) {
+    .navbar {
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+}
+
+ 
+ /* Styling the Notification's dropdown menu. */
+ .notification-dropdown {
+    position: absolute;
+    right: 60px;
+    top: 45px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 100;
+    width: 250px;
+  }
+  
+  .notification-dropdown ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .notification-dropdown li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .notification-dropdown li a:hover {
+    color: #1a73e8;
+  }
+  
+  .notification-dropdown li:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  /* -- Styling the Navigation Bar **/
+
+
+
+
+
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+}
+
+.logo img {
+    max-width: 100px;
+}
+  
+ /* Aligning the search bar to the right. */
+  .navbar form {
+    margin-left: auto;
+  }
+  
+  .notification-badge {
+    position: relative;
+  }
+  
+ /* Styling the notification badge. */
+  .notification-badge::after {
+    content: attr(data-count);
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    padding: 2px 4px;
+    border-radius: 50%;
+  }
+
+/* Making the user name clickable. */
+  .user-name {
+    cursor: pointer;
+}
+
+/* Styling the dropdown menu. */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    list-style-type: none;
+    margin: 0;
+    right: 0;
+    z-index: 1000;
+
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/* Hiding the navLinks. */
+.navLinks {
+    display: none;
+    background-color: #000;
+  }
+  
+ /* Aligning the profile picture and the user name to the right. */
+  .authLinks {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .authLinks li {
+    position: relative;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .authLinks li:hover .dropdown-menu,
+  .authLinks li:focus-within .dropdown-menu {
+    display: block;
+  }
+  
+  
+ /* Styling the profile picture. */
+ .user-image {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+/* Styling the dropdown menu. */
+
+
+/* Search bar container */
+.d-inline-flex {
+    position: relative;
+}
+
+/* Search input field */
+.form-control {
+    width: 400px;
+    height: 25px;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 50px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+/* Search icon */
+.btn-outline-secondary {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: black;
+}
+
+/* Change the search icon color on hover */
+.btn-outline-secondary:hover {
+    color: #333;
+}
+
+
+/* Main Content */
+.mainContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0;
+    background-color: #f5f5f5;
+}
+
+.mainContentContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mainContentText {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.mainContentText h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.mainContentText p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #555555;
+    margin-bottom: 30px;
+}
+
+.tryForFree {
+    background-color: #29a0e7;
+    color: #ffffff;
+    padding: 12px 30px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-right: 15px;
+}
+
+.tryForFree:hover {
+    background-color: #1d87bd;
+    color: #ffffff;
+}
+
+.learnMore {
+    color: #555555;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.learnMore:hover {
+    color: #29a0e7;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+h1,
+h2 {
+    color: #444;
+}
+h3 {
+    color: #999;
+}
+.btn {
+    background: #29a0e7;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+}
+.btn:hover {
+    color: #29a0e7;
+    background: white;
+    padding: 3px 8px;
+    border: 2px solid #29a0e7;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    border-bottom: 2px solid #999;
+}
+table {
+    padding: 10px;
+}
+th,
+td {
+    text-align: left;
+    padding: 8px;
+}
+.side-menu {
+    position: fixed;
+    background: #29a0e7;
+    width: 20vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.side-menu .brand-name {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.side-menu li {
+    font-size: 24px;
+    padding: 10px 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.side-menu li:hover {
+    background: white;
+    color: #29a0e7;
+}
+.container {
+    position: absolute;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background: #f1f1f1;
+}
+.container .header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 10vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.container .header .nav {
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+.container .header .nav .search {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+}
+.container .header .nav .search input[type=text] {
+    border: none;
+    background: #f1f1f1;
+    padding: 10px;
+    width: 50%;
+}
+.container .header .nav .search button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .header .nav .search button img {
+    width: 30px;
+    height: 30px;
+}
+.container .header .nav .user {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .header .nav .user img {
+    width: 40px;
+    height: 40px;
+}
+.container .header .nav .user .img-case {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+.container .header .nav .user .img-case img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.container .content {
+    position: relative;
+    margin-top: 10vh;
+    min-height: 90vh;
+    background: #f1f1f1;
+}
+.container .content .cards {
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.container .content .cards .card {
+    width: 250px;
+    height: 150px;
+    background: white;
+    margin: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container .content .content-2 {
+    min-height: 60vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.container .content .content-2 .recent-payments {
+    min-height: 50vh;
+    flex: 5;
+    background: white;
+    margin: 0 25px 25px 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+}
+.container .content .content-2 .new-students {
+    flex: 2;
+    background: white;
+    min-height: 50vh;
+    margin: 0 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+}
+.container .content .content-2 .new-students table td:nth-child(1) img {
+    height: 40px;
+    width: 40px;
+}
+@media screen and (max-width: 1050px) {
+    .side-menu li {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 940px) {
+    .side-menu li span {
+        display: none;
+    }
+    .side-menu {
+        align-items: center;
+    }
+    .side-menu li img {
+        width: 40px;
+        height: 40px;
+    }
+    .side-menu li:hover {
+        background: #29a0e7;
+        padding: 8px 38px;
+        border: 2px solid white;
+    }
+}
+@media screen and (max-width:536px) {
+    .brand-name h1 {
+        font-size: 16px;
+    }
+    .container .content .cards {
+        justify-content: center;
+    }
+    .side-menu li img {
+        width: 30px;
+        height: 30px;
+    }
+    .container .content .content-2 .recent-payments table th:nth-child(2),
+    .container .content .content-2 .recent-payments table td:nth-child(2) {
+        display: none;
+    }
+}
